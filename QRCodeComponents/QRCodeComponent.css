@@ -1,0 +1,49 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background-color: hsl(212, 45%, 89%);   
+    font-family: Outfit;
+}
+.cards{
+    background-color: hsl(0, 0%, 100%);
+    height: max-content;
+    width: 275px;
+    padding: 17px;
+    border-radius: 15px;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    }
+.qrCode img{
+    width: 100%;
+    border-radius: 15px;
+}
+.title{
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    font-style: bold;
+    font-size: 20px;
+}
+.des{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+    color: hsl(220, 15%, 55%);
+    font-weight: 400;
+}
+
+
