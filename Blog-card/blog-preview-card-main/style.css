@@ -1,0 +1,99 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 20px;
+    font-family: figtree;
+}
+
+.card--modifier{
+    background-color: white;
+    box-shadow: 10px 10px 0px 0px black;
+}
+
+.card__image{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card__button{
+    text-align: center;
+    width: fit-content;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.card__button--modifier{
+    background-color: hsl(47, 88%, 63%);
+    margin-top: 1.5rem;
+}
+
+.card__date{
+    margin-top: 0.8rem;
+}
+
+.card__title{
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+    font-weight: 800;
+}
+.card__title:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+.card__paragraph{
+    margin-top: 0.8rem;
+    font-size: 1rem;
+}
+.card__paragraph--modifier{
+    color: hsl(0, 0%, 42%)
+}
+
+.card__author{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-weight: 800;
+}
+
+.card__author__image{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+.attribution{
+    color: #444444;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 375px){
+    .card{
+        width: 20.438rem;
+    }
+}
