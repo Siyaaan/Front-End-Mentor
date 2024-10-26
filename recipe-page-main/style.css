@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /*if you want to center the content vertically*/
+    padding: 20px;
+}
+
+/* PARENT DIV // CONTAINER */
+
+.Parent {
+    background-color: white;
+    width: 700px;
+    margin: 60px 0;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+/* UNIVERSAL */
+.Heading {
+    font-family: Young serif;
+    font-weight: 100;
+    color: black;
+}
+
+/* IMAGE */
+
+.image-container {
+    max-width: fit-content;
+    height: auto;
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+
+
+/* INTRODUCTION */
+.Introduction {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Introduction h1 {
+    margin-bottom: 10px;
+}
+
+/* PREPARATION */
+.Preparation {
+    background-color:   hsl(330, 100%, 98%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.Preparation h3 {
+    background-color: hsl(330, 100%, 98%);
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 10px;
+}
+.Preparation ul {
+    list-style-position: outside;
+    padding-left: 30px;
+}
+.Preparation li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.Preparation li::marker {
+    color: hsl(332, 51%, 32%);
+    font-size: 10px;
+}
+
+/* INGREDIENTS */
+.Ingredients {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}   
+.Ingredients h2 {
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 20px;
+}   
+.Ingredients ul {
+    list-style-position: outside;
+    padding-left: 25px;
+}
+.Ingredients li {
+    padding-left: 10px;
+    margin-bottom: 7px;
+}
+.Ingredients li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: 10px;
+}
+
+/* LINE */
+.line {
+    border: none;              /* Remove the default border */
+    height: 1px;               /* Thickness of the line */
+    background-color: hsl(30, 18%, 87%);      
+}
+/* INSTRUCTIONS */
+
+.Instructions {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Instructions h2 {
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 20px;
+}
+.Instructions ol {
+    list-style-position: outside;
+    padding-left: 21px;
+}
+.Instructions li {
+    padding-left: 14px;
+    margin-bottom: 7px;
+}
+.Instructions li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* NUTRITION */
+.Nutrition {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Nutrition h2 {
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 20px;
+}
+.Nutrition p {
+    margin-bottom: 20px;
+}
+.Nutrition #table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Nutrition #table .tablespoon {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding-left: 32px;
+}
+.Nutrition #table .amount {
+    color: hsl(14, 45%, 36%);
+    padding-left: 0px;
+    font-weight: 700;
+}
+.Nutrition #table .fat {
+    border: 0px;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        /* background-color: hsl(30, 54%, 90%);
+        font-family: Outfit;
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(30, 10%, 34%);
+        display: flex;
+        justify-content: none;
+        align-items: none; */
+        min-height: 100vh; /*if you want to center the content vertically*/
+        padding: 0px;
+    }
+    
+    /* PARENT DIV // CONTAINER */
+    
+    .Parent {
+        background-color: white;
+        width: 700px;
+        margin: 0px;
+        border-radius: 0px;
+        padding: 0px;
+    }
+
+    .image-container {
+        padding: 0px;
+    }
+    .image{
+        padding: 0px;
+        border-radius: 0px;
+    }
+    .belowImage {
+        margin: 20px;
+    }
+}
